@@ -1,0 +1,31 @@
+@use '../globals/' as *;
+@use '../parts/common' as *;
+
+.container {
+  display: grid;
+  place-content: center;
+  height: 90vh;
+  & > form {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2em;
+    width: 50vw;
+    margin: 0 auto;
+    & > label {
+      display: flex;
+      justify-content: space-between;
+      & > span {
+        flex-basis: 50%;
+      }
+      & > input {
+        flex-basis: 50%;
+      }
+    }
+    & .submit {
+      text-align: center;
+      &__back {
+        margin-right: 1em;
+      }
+    }
+  }
+}
